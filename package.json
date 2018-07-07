@@ -4,7 +4,7 @@
   "description": "Simple chatting app built by Node.js, React.js, Socket.io",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev": "concurrently  \"npm run dev:client\" \"npm run dev:server\"",
     "dev:server": "nodemon ./index.js --exec \"node -r dotenv/config\"",
     "dev:client": "cd client && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
