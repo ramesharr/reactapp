@@ -7,7 +7,7 @@ const config = {
   jwtSecret: process.env.JWT_SECRET || 'chatting_app',
   jwtExpirationInterval: process.env.JWT_EXPIRATION_MINUTES || 15,
   mongo: {
-    uri: process.env.MONGODB_URI || 'mongodb://localhost:27017/chatting_app_develop',
+    uri: process.env.MONGODB_URI || 'mongodb://admin:Adm!nuser1@ds129821.mlab.com:29821/brownfox',
   },
 };
 
