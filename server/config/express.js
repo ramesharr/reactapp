@@ -18,7 +18,9 @@ app.use(logger(config.env === 'development' ? 'dev' : 'combined'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
+if (config.env === "production") {
+    app.use(express.static("../../client/build"));
+  }
 app.use(cookieParser());
 app.use(compress());
 app.use(methodOverride());
