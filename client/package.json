@@ -29,7 +29,7 @@
     "simple-line-icons": "^2.4.1",
     "socket.io-client": "^2.1.0"
   },
-  "proxy": "http://0.0.0.0:46404",
+  "proxy": "http://0.0.0.0:5000",
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/index.scss -o src",
     "start-js": "react-scripts start",
