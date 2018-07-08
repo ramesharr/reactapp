@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "heroku-postbuild": "cd client && npm start",
+    "heroku-postbuild": "cd client && npm install && npm start",
     "dev:server": "nodemon ./index.js --exec \"node -r dotenv/config\"",
     "dev:client": "cd client && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
