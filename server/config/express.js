@@ -35,6 +35,7 @@ app.use('/api/v1', routes);
 app.use(error.converter);
 app.use(error.notFound);
 app.use(error.handler);
+app.use(express.static(path.join(__dirname, 'client/build')));
 if (config.env === 'production') {
       app.use(express.static('client/build'));
     }
